@@ -1,5 +1,5 @@
 const check = document.getElementById('check');
-
+let data = [];
 // Function to compute relationship
 const computeRelationship = (a, b) => {
     for (let i = 0; i < a.length; i++) {
@@ -23,6 +23,7 @@ check.addEventListener('click', () => {
         const relation = computeRelationship(a, b);
         // Retrieve existing data from localStorage
         let storedData = JSON.parse(localStorage.getItem('namePairs')) || [];
+        data.push(storedData);
 
         // Save current pair
         storedData.push({ firstName, secondName, relation });
