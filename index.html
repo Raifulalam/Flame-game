@@ -6,40 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #check {
-            border: none;
-            padding: 3px 12px;
-            background: black;
-            color: #fff;
-            padding: 5px 20px;
-            box-shadow: 1px 1px 3px blue;
-            margin-left: 15px;
-            font-size: large;
-        }
 
-        #result {
-            margin-left: 15px;
-            color: darkcyan;
-        }
-
-        #check:hover {
-            background-color: #ccc;
-        }
-
-        input {
-            box-shadow: 1px 1px 3px blue;
-            margin-bottom: 8px;
-            padding: 3px 8px;
-            border: none;
-
-        }
-
-        input:hover {
-            background-color: #f3f0f0;
-            box-shadow: 1px 1px 3px grey;
-        }
-    </style>
 </head>
 
 
@@ -50,12 +17,14 @@
         <input type="text" id="firstName" placeholder="Enter first name"><br>
         <label for=" name2">Enter Name2 :</label>
         <input type="text" id="secondName" placeholder="Enter second name"><br>
-        <button id="check">Check Relationship</button>
         <p id="result"></p>
+        <button id="check">Check Relationship</button>
+
+
+        <h2>Last Relations Stored:</h2>
+        <ul id="storedPairs"></ul>
     </div>
-    <div></div>
-    <h2>Last Relations Stored:</h2>
-    <ul id="storedPairs"></ul>
+
     <script src="script.js"></script>
 </body>
 
