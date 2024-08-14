@@ -24,10 +24,10 @@ body {
     padding: 3px 12px;
     background: black;
     color: #fff;
-    padding: 5px 20px;
+    padding: 10px 10px;
     box-shadow: 1px 1px 3px blue;
-    margin-left: 15px;
-    font-size: large;
+    border-radius: 10px;
+    font-size: small;
 }
 
 #result {
@@ -42,7 +42,7 @@ body {
 input {
     box-shadow: 1px 1px 3px blue;
     margin-bottom: 8px;
-    padding: 3px 8px;
+    padding: 6px 28px;
     border: none;
 
 }
