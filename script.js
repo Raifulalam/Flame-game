@@ -40,7 +40,7 @@ check.addEventListener('click', () => {
             list.innerHTML = ''; // Clear existing list
             storedData.forEach(pair => {
                 const listItem = document.createElement('li');
-                listItem.textContent = `First Name: ${pair.firstName}, Second Name: ${pair.secondName}`;
+                // listItem.textContent = `First Name: ${pair.firstName}, Second Name: ${pair.secondName}`;
                 // listItem.textContent = `Relations:${pair.relation}`;
                 list.appendChild(listItem);
             });
