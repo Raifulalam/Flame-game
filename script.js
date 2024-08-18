@@ -35,18 +35,18 @@ check.addEventListener('click', () => {
         document.getElementById('result').innerText = `Relationship: ${relation}`;
 
         // Optional: Display stored pairs
-        const displayStoredPairs = () => {
-            const list = document.getElementById('storedPairs');
-            list.innerHTML = ''; // Clear existing list
-            storedData.forEach(pair => {
-                const listItem = document.createElement('li');
-                // listItem.textContent = `First Name: ${pair.firstName}, Second Name: ${pair.secondName}`;
-                // listItem.textContent = `Relations:${pair.relation}`;
-                list.appendChild(listItem);
-            });
-        };
+        // const displayStoredPairs = () => {
+        //     const list = document.getElementById('storedPairs');
+        //     list.innerHTML = ''; // Clear existing list
+        //     storedData.forEach(pair => {
+        //         const listItem = document.createElement('li');
+        //         listItem.textContent = `First Name: ${pair.firstName}, Second Name: ${pair.secondName},Relations:${pair.relation}`;
+        //         // listItem.textContent = ``;
+        //         list.appendChild(listItem);
+        //     });
+        // };
 
-        displayStoredPairs();
+        // displayStoredPairs();
 
     } else {
         document.getElementById('result').innerText = `Please enter both names`;
@@ -54,18 +54,18 @@ check.addEventListener('click', () => {
 });
 
 // Optional: Load and display stored pairs on page load
-window.addEventListener('load', () => {
-    const storedData = JSON.parse(localStorage.getItem('namePairs')) || [];
-    const displayStoredPairs = () => {
-        const list = document.getElementById('storedPairs');
-        // list.innerHTML = ''; // Clear existing list
-        storedData.forEach(pair => {
-            const listItem = document.createElement('li');
-            listItem.textContent = `First Name: ${pair.firstName}, Second Name: ${pair.secondName}, Relation: ${pair.relation}`;
-            // listItem.textContent = `Relation: ${pair.relation}`
-            list.appendChild(listItem);
-        });
-    };
+// window.addEventListener('load', () => {
+//     const storedData = JSON.parse(localStorage.getItem('namePairs')) || [];
+//     // const displayStoredPairs = () => {
+//     //     const list = document.getElementById('storedPairs');
+//     //     // list.innerHTML = ''; // Clear existing list
+//     //     storedData.forEach(pair => {
+//     //         const listItem = document.createElement('li');
+//     //         listItem.textContent = `First Name: ${pair.firstName}, Second Name: ${pair.secondName}, Relation: ${pair.relation}`;
+//     //         // listItem.textContent = `Relation: ${pair.relation}`
+//     //         list.appendChild(listItem);
+//     //     });
+//     // };
 
-    displayStoredPairs();
-});
+//     displayStoredPairs();
+// });
